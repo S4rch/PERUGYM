@@ -177,8 +177,8 @@ img:hover{
     .img-navidad:hover{
         display: flex;
         position: absolute;
-        left: 310px;
-        top: 0px;
+        left: 280px;
+        top: 2px;
         height: 32px;
         z-index: 1;
     }
