@@ -1,11 +1,12 @@
 /*RESET*/
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 /* HEADER */
-.navegador{
+.navegador {
     background-color: rgb(255, 255, 255);
     display: flex;
     padding: 0 10px;
@@ -13,35 +14,41 @@
     justify-content: space-between;
     align-items: center;
 }
-.navegador h2{
+
+.navegador h2 {
     font-size: 50px;
 }
-.menu a{
+
+.menu a {
     color: black;
     padding: 0 20px;
     text-decoration: none;
 }
 
 .mostrar-menu,
-.esconder-menu{
+.esconder-menu {
     font-size: 50px;
     cursor: pointer;
     transition: 0.4s;
     display: none;
 }
-.mostrar-menu{
+
+.mostrar-menu {
     order: 1;
 }
+
 .menu a:hover,
 .mostrar-menu:hover,
-.esconder-menu:hover{
+.esconder-menu:hover {
     color: rgb(255, 1, 1);
     text-decoration: none;
 }
-#check{
+
+#check {
     display: none;
 }
-.img-navidad{
+
+.img-navidad {
     display: flex;
     position: absolute;
     left: 265px;
@@ -49,7 +56,8 @@
     height: 40px;
     z-index: 1;
 }
-.img-navidad:hover{
+
+.img-navidad:hover {
     display: flex;
     position: absolute;
     left: 265px;
@@ -57,24 +65,27 @@
     height: 40px;
     z-index: 1;
 }
+
 /*BANNER*/
-#banner{
-    color:aliceblue;
+#banner {
+    color: aliceblue;
     padding: 0 50px;
     background-image: url(img/5469461.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
-#banner::before{
+
+#banner::before {
     content: " ";
-    background-color: rgb(0, 0, 0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     position: absolute;
     width: 100%;
     height: 100vh;
     left: 0;
 }
-.contenido-banner{
+
+.contenido-banner {
     font-size: 80px;
     font-weight: 100px;
     position: relative;
@@ -84,10 +95,11 @@
     justify-content: center;
 }
 
-.contenido-banner h3 span{
+.contenido-banner h3 span {
     font-weight: 100px;
 }
-.boton-empezar{
+
+.boton-empezar {
     border-radius: 50px;
     text-decoration: none;
     color: aliceblue;
@@ -97,9 +109,11 @@
     transition: 0.3s;
     margin-top: 40px;
 }
-.boton-empezar:hover{
-    background-color: rgba(255, 1, 1,.5);
+
+.boton-empezar:hover {
+    background-color: rgba(255, 1, 1, .5);
 }
+
 /*REDES*/
 #redes {
     justify-content: space-between;
@@ -115,29 +129,36 @@
 .instagram a {
     text-decoration: none;
 }
+
 .facebook a {
     text-decoration: none;
     color: black;
 }
+
 .tiktok a {
     text-decoration: none;
     color: black;
 }
-img{
+
+img {
     height: 30px;
 }
-img:hover{
-    height: 35px;
+
+img:hover {
+    transform: scale(1.04); /* Escala la imagen al 104% */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Añade un efecto de sombra */
 }
 
 /*RESPONSIVE*/
-@media(max-width:768px){
+@media(max-width:768px) {
+
     /*HEADER*/
     .mostrar-menu,
-    .esconder-menu{
+    .esconder-menu {
         display: block;
     }
-    .menu{
+
+    .menu {
         top: 0;
         position: fixed;
         width: 100%;
@@ -149,24 +170,29 @@ img:hover{
         transition: 0.3s;
         right: -100%;
     }
-    .menu a{
+
+    .menu a {
         display: block;
         padding: 20px;
     }
-    .esconder-menu{
+
+    .esconder-menu {
         position: absolute;
         top: 40px;
         right: 40px;
     }
-    #check:checked ~ .menu{
+
+    #check:checked~.menu {
         right: 0;
 
     }
-    .navegador h2{
+
+    .navegador h2 {
         font-size: 45px;
-        padding-left:40px ;
+        padding-left: 40px;
     }
-    .img-navidad{
+
+    .img-navidad {
         display: flex;
         position: absolute;
         left: 280px;
@@ -174,25 +200,27 @@ img:hover{
         height: 32px;
         z-index: 1;
     }
-    .img-navidad:hover{
+
+    .img-navidad:hover {
         display: flex;
         position: absolute;
-        left: 280px;
-        top: 2px;
+        left: 310px;
+        top: 0px;
         height: 32px;
         z-index: 1;
     }
 
     /* BANNER */
-    #banner{
-        color:aliceblue;
+    #banner {
+        color: aliceblue;
         padding: 0 50px;
         background-image: url(img/5469461.jpg);
         height: 100vh;
         background-size: cover;
         background-position: center;
     }
-    .contenido-banner{
+
+    .contenido-banner {
         font-size: 50px;
         font-weight: 100px;
         position: relative;
@@ -201,30 +229,37 @@ img:hover{
         flex-direction: column;
         justify-content: center;
     }
+
     /*REDES*/
     #redes {
         display: flex;
         padding: 0 50px;
-        justify-content: space-between;
         text-decoration: none;
         font-size: 20px;
         height: 12vh;
         align-items: center;
-        flex-direction: column;
     }
+
     .instagram a {
         text-decoration: none;
     }
+
     .facebook a {
         text-decoration: none;
     }
+
     .tiktok a {
         text-decoration: none;
     }
-    #redes img{
+
+    #redes img {
         padding: 20px 0px;
     }
-    img:hover{
-        height: 35px;
+
+    img:hover {
+        transform: scale(1.04);
+        /* Escala la imagen al 104% */
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+        /* Añade un efecto de sombra */
     }
 }
